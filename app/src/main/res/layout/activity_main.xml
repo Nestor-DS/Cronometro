@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#A8713F"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"/>
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="48sp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#A8713F"
+        android:layout_marginBottom="32dp"
+        android:textColor="@color/purple_500"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="@string/start"
+            android:textSize="16sp"
+            app:iconTint="#FA0000" />
+
+        <Button
+            android:id="@+id/stop_button"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:enabled="false"
+            android:text="@string/stop"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:enabled="false"
+            android:text="@string/reset"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/lap_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="@string/lap"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/lap_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lap_time"
+        android:textSize="18sp"
+        android:backgroundTint="#A8713F"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp"/>
+
+    <ListView
+        android:id="@+id/lap_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
